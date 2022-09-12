@@ -18,13 +18,13 @@
 ## Python
 
 ```python
-from collections.abc import Generator
+from typing import Generator
 
 
 def long_sum(
-        first_number: Generator[int],
-        second_number: Generator[int],
+        first_number: Generator[int, None, None],
+        second_number: Generator[int, None, None],
         base: int
-) -> Generator[int]:
+) -> Generator[int, None, None]:
     pass
 ```
